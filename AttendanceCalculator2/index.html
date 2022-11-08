@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Attendance Calculator</title>
+</head>
+
+<body>
+    <nav class="navbar bg-slate-800 text-white text-center font-extrabold h-16 flex justify-center items-center">
+        <span class="">DAD Material</span>
+        <button type="button" id="clear" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm p-1 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700 absolute right-0 border-8 border-yellow-600">Clear All</button>
+    </nav>
+    <div class="body m-0 p-0">
+        <div class="frontpage">
+            <div class="date text-2xl font-bold text-center m-10">Monday - 00-00-0000</div>
+            <hr><hr><hr>
+            <div class="subjects">
+                <div class="EMMI flex w-auto justify-evenly my-5">
+                    <h3 class="text-lg font-bold py-5 px-2">EMMI</h3>
+                    <span class="select">
+                        <label for="countries"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 text-center">Select an
+                            option</label>
+                        <select id="neel0"
+                            class="countries bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 sm:w-auto p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected="" >Choose</option>
+                            <option value="P">Present in Class</option>
+                            <option value="A">Absent in Class</option>
+                        </select>
+                    </span>
+                    <div class="total flex flex-col">
+                        <span class="text-center">Classes Attended</span>
+                        <span class="text-center attended">0/0</span>
+                    </div>
+                    <div class="percentage flex flex-col">
+                        <span class="">Percentage</span>
+                        <span class="text-center perc">0%</span>
+                    </div>
+                </div>
+                <hr><hr><hr>
+                <div class="DE flex w-auto justify-evenly my-5">
+                    <h3 class="text-lg font-bold py-5 px-2">DE</h3>
+                    <span class="select">
+                        <label for="countries"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 text-center">Select an
+                            option</label>
+                        <select id="neel1"
+                            class="countries bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 sm:w-auto p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected="">Choose</option>
+                            <option value="P">Present in Class</option>
+                            <option value="A">Absent in Class</option>
+                        </select>
+                    </span>
+                    <div class="total flex flex-col">
+                        <span class="text-center">Classes Attended</span>
+                        <span class="text-center attended">0/0</span>
+                    </div>
+                    <div class="percentage flex flex-col">
+                        <span class="">Percentage</span>
+                        <span class="text-center perc">0%</span>
+                    </div>
+                </div>
+                <hr><hr><hr>
+                <div class="EM flex w-auto justify-evenly my-5">
+                    <h3 class="text-lg font-bold py-5 px-2">EM</h3>
+                    <span class="select">
+                        <label for="countries"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 text-center">Select an
+                            option</label>
+                        <select id="neel2"
+                            class="countries bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 sm:w-auto p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected="">Choose</option>
+                            <option value="P">Present in Class</option>
+                            <option value="A">Absent in Class</option>
+                        </select>
+                    </span>
+                    <div class="total flex flex-col">
+                        <span class="text-center">Classes Attended</span>
+                        <span class="text-center attended">0/0</span>
+                    </div>
+                    <div class="percentage flex flex-col">
+                        <span class="">Percentage</span>
+                        <span class="text-center perc">0%</span>
+                    </div>
+                </div>
+                <hr><hr><hr>
+                <div class="OOP flex w-auto justify-evenly my-5">
+                    <h3 class="text-lg font-bold py-5 px-2">OOP</h3>
+                    <span class="select">
+                        <label for="countries"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 text-center">Select an
+                            option</label>
+                        <select id="neel3"
+                            class="countries bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 sm:w-auto p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected="">Choose</option>
+                            <option value="P">Present in Class</option>
+                            <option value="A">Absent in Class</option>
+                        </select>
+                    </span>
+                    <div class="total flex flex-col">
+                        <span class="text-center">Classes Attended</span>
+                        <span class="text-center attended">0/0</span>
+                    </div>
+                    <div class="percentage flex flex-col">
+                        <span class="">Percentage</span>
+                        <span class="text-center perc">0%</span>
+                    </div>
+                </div>
+                <hr><hr><hr>
+                <div class="NA flex w-auto justify-evenly my-5">
+                    <h3 class="text-lg font-bold py-5 px-2">NA</h3>
+                    <span class="select">
+                        <label for="countries"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 text-center">Select an
+                            option</label>
+                        <select id="neel4"
+                            class="countries bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 sm:w-auto p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected="">Choose</option>
+                            <option value="P">Present in Class</option>
+                            <option value="A">Absent in Class</option>
+                        </select>
+                    </span>
+                    <div class="total flex flex-col">
+                        <span class="text-center">Classes Attended</span>
+                        <span class="text-center attended">0/0</span>
+                    </div>
+                    <div class="percentage flex flex-col">
+                        <span class="">Percentage</span>
+                        <span class="text-center perc">0%</span>
+                    </div>
+                </div>
+                <hr><hr><hr>
+                <div class="SAS flex w-auto justify-evenly my-5">
+                    <h3 class="text-lg font-bold py-5 px-2">SAS</h3>
+                    <span class="select">
+                        <label for="countries"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 text-center">Select an
+                            option</label>
+                        <select id="neel5"
+                            class="countries bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 sm:w-auto p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected="">Choose</option>
+                            <option value="P">Present in Class</option>
+                            <option value="A">Absent in Class</option>
+                        </select>
+                    </span>
+                    <div class="total flex flex-col">
+                        <span class="text-center">Classes Attended</span>
+                        <span class="text-center attended">0/0</span>
+                    </div>
+                    <div class="percentage flex flex-col">
+                        <span class="">Percentage</span>
+                        <span class="text-center perc">0%</span>
+                    </div>
+                </div>
+                <hr><hr><hr>
+                <div class="EMMIL flex w-auto justify-evenly my-5">
+                    <h3 class="text-lg font-bold py-5 px-2">EMMIL</h3>
+                    <span class="select">
+                        <label for="countries"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 text-center">Select an
+                            option</label>
+                        <select id="neel6"
+                            class="countries bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 sm:w-auto p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected="">Choose</option>
+                            <option value="P">Present in Class</option>
+                            <option value="A">Absent in Class</option>
+                        </select>
+                    </span>
+                    <div class="total flex flex-col">
+                        <span class="text-center">Classes Attended</span>
+                        <span class="text-center attended">0/0</span>
+                    </div>
+                    <div class="percentage flex flex-col">
+                        <span class="">Percentage</span>
+                        <span class="text-center perc">0%</span>
+                    </div>
+                </div>
+                <hr><hr><hr>
+                <div class="DEL flex w-auto justify-evenly my-5">
+                    <h3 class="text-lg font-bold py-5 px-2">DEL</h3>
+                    <span class="select">
+                        <label for="countries"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 text-center">Select an
+                            option</label>
+                        <select id="neel7"
+                            class="countries bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 sm:w-auto p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected="">Choose</option>
+                            <option value="P">Present in Class</option>
+                            <option value="A">Absent in Class</option>
+                        </select>
+                    </span>
+                    <div class="total flex flex-col">
+                        <span class="text-center">Classes Attended</span>
+                        <span class="text-center attended">0/0</span>
+                    </div>
+                    <div class="percentage flex flex-col">
+                        <span class="">Percentage</span>
+                        <span class="text-center perc">0%</span>
+                    </div>
+                </div>
+                <hr><hr><hr>
+                <div class="OOPL flex w-auto justify-evenly my-5">
+                    <h3 class="text-lg font-bold py-5 px-2">OOPL</h3>
+                    <span class="select">
+                        <label for="countries"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 text-center">Select an
+                            option</label>
+                        <select id="neel8"
+                            class="countries bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 sm:w-auto p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected="">Choose</option>
+                            <option value="P">Present in Class</option>
+                            <option value="A">Absent in Class</option>
+                        </select>
+                    </span>
+                    <div class="total flex flex-col">
+                        <span class="text-center">Classes Attended</span>
+                        <span class="text-center attended">0/0</span>
+                    </div>
+                    <div class="percentage flex flex-col">
+                        <span class="">Percentage</span>
+                        <span class="text-center perc">0%</span>
+                    </div>
+                </div>
+                <hr><hr><hr>
+                <div class="NAL flex w-auto justify-evenly my-5">
+                    <h3 class="text-lg font-bold py-5 px-2">NAL</h3>
+                    <span class="select">
+                        <label for="countries"
+                            class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 text-center">Select an
+                            option</label>
+                        <select  id="neel9"
+                            class="countries bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-24 sm:w-auto p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected="">Choose</option>
+                            <option value="P">Present in Class</option>
+                            <option value="A">Absent in Class</option>
+                        </select>
+                    </span>
+                    <div class="total flex flex-col">
+                        <span class="text-center">Classes Attended</span>
+                        <span class="text-center attended">0/0</span>
+                    </div>
+                    <div class="percentage flex flex-col">
+                        <span class="">Percentage</span>
+                        <span class="text-center perc">0%</span>
+                    </div>
+                </div>
+                <hr><hr><hr>
+            </div>
+        </div>
+        <div class="back"></div>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>

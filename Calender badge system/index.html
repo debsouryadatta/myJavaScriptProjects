@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/input.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Consistency Analyser - Maintain your consistency</title>
+</head>
+
+<body class="bg-indigo-500 text-white">
+    <div class="inp flex justify-center items-center">
+        <input id="inp" class="h-6 text-black" type="text" placeholder="Name">
+        <button class="bg-indigo-700 px-4 py-2" onclick="submitFunc()">Submit</button>
+    </div>
+    <div class="container1 flex flex-col justify-center items-center">
+        <h1 class="text-xl text-center font-bold">Consistency Analyser</h1>
+        <h1 class="text-xl text-center font-bold">Maintain your consistency</h1>
+        <div class="text-center my-4 border-solid border-4 border-inherit w-40 rounded-xl"><span>Badges Obtained</span>
+        </div>
+        <div class="badges flex justify-center items-center">
+            <span class="text-sm text-center"><img id="img10" class="img10 w-fit px-2 opacity-30" src="/1.png"
+                    alt="">After 10 days</span>
+            <span class="text-sm text-center"><img id="img20" class="img20 w-fit px-2 opacity-30" src="/2.png"
+                    alt="">After 20 days</span>
+            <span class="text-sm text-center"><img id="img30" class="img30 w-fit px-2 opacity-30" src="/3.png"
+                    alt="">After 30 days</span>
+        </div>
+        <span class="text-center mt-5 font-bold"><i>Debsourya Datta Dashboard</i></span>
+    </div>
+    <div class="container2 my-4 flex justify-center items-center">
+        <div id="rows" class="rows bg-red-400 w-64 h-72 flex items-center flex-wrap justify-between">
+
+        </div>
+    </div>
+
+
+
+    <script src="/app.js"></script>
+    <script src="/app2.js"></script>
+</body>
+
+</html>
